@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    margin: 0;
+}
+
+header {
+    background: #020617;
+    padding: 30px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #020617;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    font-size: 14px;
+}
+
