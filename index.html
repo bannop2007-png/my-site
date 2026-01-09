@@ -212,21 +212,32 @@
     </div>
 
     <aside>
-      <h2>📌 Категории</h2>
-      <ul>
-        <li><a href="#top-ways">ТОП способы</a></li>
-        <li><a href="#tips">Советы</a></li>
-        <li><a href="#health">Здоровье</a></li>
-        <li><a href="#reviews">Отзывы</a></li>
-      </ul>
+  <h2>📌 Категории</h2>
+  <ul>
+    <li><a href="#intro">Введение</a></li>
+    <li><a href="#top-ways">ТОП способы</a></li>
+    <li><a href="#tips">Советы</a></li>
+    <li><a href="#earnings">Заработок</a></li>
+    <li><a href="#health">Здоровье</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
 
-      <h2>🔥 Горячая рекомендация</h2>
-      <div class="card">
-        <h3>Osteofast</h3>
-        <p>Крем от болей в суставах</p>
-        <a href="#" target="_blank">Акция →</a>
-      </div>
-    </aside>
+  <h2>📩 Подпишись на обновления</h2>
+  <p>Новые способы заработка и акции каждую неделю!</p>
+  <form action="https://formspree.io/f/ТВОЙ_КОД_FORMSPREE" method="POST">
+    <input type="email" name="email" placeholder="Твой email" required style="width:100%; padding:15px; margin:10px 0; border-radius:50px; border:none;">
+    <button type="submit" style="background:#6e56cf; color:white; padding:15px; border:none; border-radius:50px; width:100%; font-weight:bold; cursor:pointer;">Подписаться бесплатно</button>
+  </form>
+  <p><small>Мы не спамим — только полезное</small></p>
+
+  <h2>🔥 Горячая рекомендация</h2>
+  <div class="card">
+    <h3>Osteofast</h3>
+    <p>Крем от болей в суставах</p>
+    <a href="#" target="_blank">Акция →</a>
+  </div>
+</aside>
   </main>
 
   <footer>
@@ -260,6 +271,17 @@
         closeChat();
       }
     }
+    function subscribe() {
+  var email = document.getElementById('subscribeEmail').value;
+  if (email) {
+    document.getElementById('subscribeForm').style.display = 'none';
+    document.getElementById('subscribeThanks').style.display = 'block';
+  } else {
+    alert('Введи email!');
+  }
+}
   </script>
+  
 </body>
 </html>
+
